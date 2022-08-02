@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.done span{
+  text-decoration: line-through;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.AddTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.TodoList{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+
+.Todo{
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.fa-check {
+  color: green;
+  margin: 0 0.5rem;
+}
+
+.fa-trash{
+  color: red;
 }
